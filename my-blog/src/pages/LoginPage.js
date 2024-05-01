@@ -7,7 +7,8 @@ const LoginPage = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
 
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    
     const logIn = async () => {
         try {
             await signInWithEmailAndPassword(getAuth(), email, password);
